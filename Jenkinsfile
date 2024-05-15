@@ -7,7 +7,7 @@ pipeline {
                 script {
                     sh 'chmod +x ./list_contents.sh'
                     def output = sh(script: './list_contents.sh', returnStdout: true).trim()
-                    echo "Files:\n======\n ${output}"
+                    echo "Files:\n======\n${output}"
                 }
             }
         }
